@@ -1,0 +1,38 @@
+
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+
+.site{
+	display: grid;
+	grid-template-columns: 10% 2fr 1fr;
+	grid-template-rows:  10% 3% 5% 1fr 5%;
+	grid-template-areas: 
+	"masthead masthead masthead "
+	"navmenu navmenu credentials"
+	"SearchBar SearchBar  FeedBack"
+	"  ImagesContainer ImagesContainer ImagesContainer"
+	"footer-area footer-area footer-area "
+
+}
+
+.masthead{
+	grid-area: masthead;
+}
+.navmenu{
+	grid-area: navmenu;
+}
+.credentials{
+grid-area: credentials;
+}
+.SearchBar{
+grid-area: SearchBar;
+}
+.ImagesContainer{
+grid-area: ImagesContainer;
+}
+.footer-area{
+	grid-area: footer-area;
+}
